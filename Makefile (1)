@@ -1,0 +1,12 @@
+# Target to compile the object file
+fileName: fileName.o
+	g++ fileName.o -o fileName.exe
+
+# Target to compile the C++ program
+fileName.o: fileName.cpp
+	g++ -c fileName.cpp -o fileName.o
+
+# Target to run the program (interactively)
+run: fileName
+	./fileName.exe
+
