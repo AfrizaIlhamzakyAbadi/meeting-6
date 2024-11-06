@@ -8,6 +8,10 @@ struct student
 	float UAS;
 	float average;
 };
+float Average(student x)
+{
+	return (x.UTS + x.UAS) / 2.0;
+}
 student f[50];
 int main()
 {
@@ -30,7 +34,7 @@ int main()
 		cin >> f[i].UTS;
 		cout << "UAS score: ";
 		cin >> f[i].UAS;
-		f[i].average = (f[i].UTS + f[i].UAS) / 2.0;
+		f[i].average = Average(f[i]);
 	}
 	cout << "___________________\n";
 	for (int k{ 0 }; k < n; k++)
