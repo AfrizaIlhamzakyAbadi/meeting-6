@@ -24,4 +24,4 @@ test: test_Source
 
 # Target to clean up compiled files
 clean:
-	rm -f source.o test_Source.o source.exe test_Source.exe
+	rm -f Source.o test_Source.o Source.exe test_Source.exe
